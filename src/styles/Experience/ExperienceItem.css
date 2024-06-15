@@ -1,0 +1,36 @@
+.experience_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin: 10px;
+}
+
+.experience_item_left,
+.experience_item_right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+}
+
+.experience_item_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.experience_item_company {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.experience_item_date {
+    font-size: 0.8rem;
+}
+
+.experience_item_description {
+    font-size: 0.8rem;
+}

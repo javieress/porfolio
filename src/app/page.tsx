@@ -1,3 +1,4 @@
+import Experience from "@/components/Experience/Experience";
 import Welcome from "@/components/Welcome/Welcome";
 import Image from "next/image";
 
@@ -14,6 +15,7 @@ export default function Home() {
       {/* Welcome */}
       <Welcome />
       {/* Experience */}
+      <Experience />
       {/* Projects */}
       {/* About me */}
     </main>

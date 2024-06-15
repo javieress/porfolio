@@ -40,7 +40,7 @@ export default function PortfolioNavbar() {
         <NavbarBrand>
           {/* <AcmeLogo /> */}
           <Image src="/alma.svg" alt="Javier Rojas" width={40} height={40} />
-          <p className="font-bold text-inherit">Portfolio Javier Rojas</p>
+          <p className="font-bold text-inherit">Porfolio Javier Rojas</p>
         </NavbarBrand>
       </NavbarContent>
 

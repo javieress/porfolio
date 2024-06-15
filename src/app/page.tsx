@@ -9,7 +9,6 @@ export default function Home() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        maxWidth: "700px",
       }}
     >
       {/* Welcome */}

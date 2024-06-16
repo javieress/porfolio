@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import PortfolioNavbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
           <NextUIProvider>
             <PortfolioNavbar />
             {children}
+            <Footer />
           </NextUIProvider>
         }
       </body>

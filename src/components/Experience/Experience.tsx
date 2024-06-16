@@ -26,13 +26,7 @@ export default function Experience() {
       <h1 className="experience_title">Experiencia</h1>
       {/* experience items */}
       {experiences.map((experience, index) => (
-        <ExperienceItem
-          key={index}
-          title={experience.title}
-          company={experience.company}
-          date={experience.date}
-          description={experience.description}
-        />
+        <ExperienceItem key={index} {...experience} />
       ))}
     </section>
   );

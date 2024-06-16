@@ -1,0 +1,70 @@
+.project_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin: 10px;
+}
+
+.project_image {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+.project_content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.project_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.project_technologies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+}
+
+.project_technology {
+    padding: 3px 10px;
+    border-radius: 10px;
+    background-color: gray;
+    color: black;
+    font-size: 0.6rem;
+}
+
+.project_description {
+    font-size: 0.8rem;
+}
+
+.project_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    gap: 1rem;
+}
+
+.project_links a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(4, 112, 239, 0.2);
+    color: var(--color-primary);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

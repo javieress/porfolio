@@ -1,3 +1,4 @@
+import AboutMe from "@/components/AboutMe/AboutMe";
 import Experience from "@/components/Experience/Experience";
 import Projects from "@/components/Projects/Projects";
 import Welcome from "@/components/Welcome/Welcome";
@@ -20,6 +21,7 @@ export default function Home() {
       {/* Projects */}
       <Projects />
       {/* About me */}
+      <AboutMe />
     </main>
   );
 }

@@ -15,13 +15,13 @@ export default function Home() {
       }}
     >
       {/* Welcome */}
-      <Welcome />
+      <Welcome id="welcome" />
       {/* Experience */}
-      <Experience />
+      <Experience id="experience" />
       {/* Projects */}
-      <Projects />
+      <Projects id="projects" />
       {/* About me */}
-      <AboutMe />
+      <AboutMe id="about-me" />
     </main>
   );
 }

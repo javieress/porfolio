@@ -1,9 +1,14 @@
 import { Button } from "@nextui-org/react";
 import "../../styles/Welcome/Welcome.css";
 import Image from "next/image";
-export default function Welcome() {
+
+type WelcomeProps = {
+  id: string;
+};
+
+export default function Welcome({ id }: WelcomeProps) {
   return (
-    <section className="welcome">
+    <section className="welcome" id={id}>
       {/* title */}
       <h1 className="welcome_title">Hola, soy Javier Rojas</h1>
       {/* description */}

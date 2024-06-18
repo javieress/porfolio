@@ -1,6 +1,10 @@
 import "../../styles/Projects/Projects.css";
 import ProjectItem from "./ProjectItem";
 
+type Project = {
+  id: string;
+};
+
 // proyectos con titulo, lista de tecnologias, descripcion, link de imagen, link de github, link de demo
 const projects = [
   {
@@ -23,9 +27,9 @@ const projects = [
   },
 ];
 
-export default function Projects() {
+export default function Projects({ id }: Project) {
   return (
-    <section className="projects">
+    <section className="projects" id={id}>
       {/* title */}
       <h1 className="projects_title">Proyectos</h1>
       {/* projects */}

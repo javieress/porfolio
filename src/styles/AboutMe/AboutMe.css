@@ -4,8 +4,15 @@
     align-items: start;
     justify-content: center;
     max-width: 650px;
-    margin-top: 50px;
+    padding-top: 100px;
     margin-bottom: 50px;
+
+    transition: all 0.5s ease;
+
+    &:hover {
+        scale: 1.03;
+        transition: scale 0.3s ease;
+    }
 }
 
 .about_me_title {

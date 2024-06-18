@@ -2,6 +2,10 @@ import ExperienceItem from "./ExperienceItem";
 
 import "../../styles/Experience/Experience.css";
 
+type ExperienceItem = {
+  id: string;
+};
+
 const experiences = [
   {
     title: "Desarrollador Web",
@@ -19,9 +23,9 @@ const experiences = [
   },
 ];
 
-export default function Experience() {
+export default function Experience({ id }: ExperienceItem) {
   return (
-    <section className="experience">
+    <section className="experience" id={id}>
       {/* title */}
       <h1 className="experience_title">Experiencia</h1>
       {/* experience items */}

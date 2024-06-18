@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@nextui-org/react";
 import "../../styles/Welcome/Welcome.css";
 import Image from "next/image";
@@ -7,6 +8,13 @@ type WelcomeProps = {
 };
 
 export default function Welcome({ id }: WelcomeProps) {
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "assets/Javier_Rojas_CV.pdf";
+    link.download = "Javier_Rojas_CV.pdf";
+    link.click();
+  };
+
   return (
     <section className="welcome" id={id}>
       {/* title */}
@@ -21,11 +29,20 @@ export default function Welcome({ id }: WelcomeProps) {
       <span className="welcome_buttons">
         <Button color="default" className="welcome_button">
           {/* ! todo add email icon */}
-          Contacto
+          <a href="mailto:javier.est.rojas@gmail.com">Contacto</a>
         </Button>
         <Button color="default" className="welcome_button">
           {/* ! todo: add linkedin icon */}
-          Linkedin
+          <a
+            href="https://www.linkedin.com/in/javieres/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin
+          </a>
+        </Button>
+        <Button color="default" className="welcome_button" onClick={downloadCV}>
+          Descargar CV
         </Button>
       </span>
     </section>

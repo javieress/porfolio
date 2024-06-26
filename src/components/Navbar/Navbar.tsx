@@ -56,7 +56,13 @@ export default function PortfolioNavbar() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Contacto</Link>
+          <Link
+            href="mailto:javier.est.rojas@gmail.com"
+            underline="hover"
+            target="_blank"
+          >
+            Contacto
+          </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>

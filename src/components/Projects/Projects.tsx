@@ -1,33 +1,26 @@
 import "../../styles/Projects/Projects.css";
 import ProjectItem from "./ProjectItem";
+import fs from "fs";
+import path from "path";
 
 type Project = {
   id: string;
 };
 
-// proyectos con titulo, lista de tecnologias, descripcion, link de imagen, link de github, link de demo
-const projects = [
-  {
-    title: "Proyecto 1",
-    technologies: ["React", "Node.js", "MongoDB"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget urna et nulla consectetur.",
-    image: "https://via.placeholder.com/150",
-    github: "https://github.com",
-    demo: "https://demo.com",
-  },
-  {
-    title: "Proyecto 2",
-    technologies: ["React", "Node.js", "MongoDB"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget urna et nulla consectetur.",
-    image: "https://via.placeholder.com/150",
-    github: "https://github.com",
-    demo: "https://demo.com",
-  },
-];
+type ProjectItem = {
+  title: string;
+  technologies: string[];
+  description: string;
+  image: string;
+  github: string;
+  demo: string;
+};
 
 export default function Projects({ id }: Project) {
+  const filePath = path.join(process.cwd(), "src/data", "projects.json");
+  const jsonData = fs.readFileSync(filePath, "utf-8");
+  const projects: ProjectItem[] = JSON.parse(jsonData);
+
   return (
     <section className="projects" id={id}>
       {/* title */}

@@ -10,7 +10,7 @@ export default function Footer() {
       <span className="footer_links">
         {/* github */}
         <a
-          href="github.com"
+          href="https://github.com/javieress"
           target="_blank"
           rel="noopener noreferrer"
           className="footer_link"
@@ -20,7 +20,7 @@ export default function Footer() {
 
         {/* linkedin */}
         <a
-          href="linkedin.com"
+          href="https://www.linkedin.com/in/javieres/"
           target="_blank"
           rel="noopener noreferrer"
           className="footer_link"

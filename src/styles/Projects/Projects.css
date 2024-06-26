@@ -4,8 +4,9 @@
     align-items: start;
     justify-content: center;
     max-width: 650px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 100px;
+
+
 }
 
 .projects_title {

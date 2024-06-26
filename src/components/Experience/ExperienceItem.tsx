@@ -4,14 +4,14 @@ type ExperienceItemProps = {
   title: string;
   company: string;
   date: string;
-  description: string;
+  descriptions: string[];
 };
 
 export default function ExperienceItem({
   title,
   company,
   date,
-  description,
+  descriptions,
 }: ExperienceItemProps) {
   return (
     <section className="experience_item">
@@ -25,7 +25,12 @@ export default function ExperienceItem({
       </section>
       <section className="experience_item_right">
         {/* description */}
-        <p className="experience_item_description">{description}</p>
+        {/* mostrar punto de ul */}
+        <ul className="experience_item_description">
+          {descriptions.map((description, index) => (
+            <li key={index}>{description}</li>
+          ))}
+        </ul>
       </section>
     </section>
   );

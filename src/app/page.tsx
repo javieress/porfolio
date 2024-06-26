@@ -2,7 +2,8 @@ import AboutMe from "@/components/AboutMe/AboutMe";
 import Experience from "@/components/Experience/Experience";
 import Projects from "@/components/Projects/Projects";
 import Welcome from "@/components/Welcome/Welcome";
-import Image from "next/image";
+
+export const runtime = "edge";
 
 export default function Home() {
   return (
@@ -15,13 +16,13 @@ export default function Home() {
       }}
     >
       {/* Welcome */}
-      <Welcome />
+      <Welcome id="welcome" />
       {/* Experience */}
-      <Experience />
+      <Experience id="experience" />
       {/* Projects */}
-      <Projects />
+      <Projects id="projects" />
       {/* About me */}
-      <AboutMe />
+      <AboutMe id="about-me" />
     </main>
   );
 }

@@ -1,8 +1,12 @@
 import "../../styles/AboutMe/AboutMe.css";
 
-export default function AboutMe() {
+type AboutMeProps = {
+  id: string;
+};
+
+export default function AboutMe({ id }: AboutMeProps) {
   return (
-    <section className="about_me">
+    <section className="about_me" id={id}>
       <h1 className="about_me_title">Sobre mi</h1>
       <p className="about_me_description">
         <strong>Ingeniero Civil en Computación e Informática</strong> de la

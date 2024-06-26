@@ -3,7 +3,7 @@ import Experience from "@/components/Experience/Experience";
 import Projects from "@/components/Projects/Projects";
 import Welcome from "@/components/Welcome/Welcome";
 
-export const runtime = "edge";
+// export const runtime = "edge";
 
 export default function Home() {
   return (

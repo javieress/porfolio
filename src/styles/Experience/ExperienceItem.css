@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    width: 100%;
+    width: 95%;
     margin: 10px;
     transition: all 0.5s ease;
 
@@ -12,7 +12,12 @@
         transition: scale 0.3s ease;
     }
 
+    @media (max-width: 640px) {
+        flex-direction: column;
+    }
+
 }
+
 
 .experience_item_left,
 .experience_item_right {
@@ -21,6 +26,10 @@
     align-items: start;
     justify-content: center;
     width: 50%;
+
+    @media (max-width: 640px) {
+        width: 95vw;
+    }
 }
 
 .experience_item_title {

@@ -6,7 +6,11 @@
     padding: 20px;
     text-align: center;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
+
+    @media (max-width: 640px) {
+        flex-direction: column;
+    }
 }
 
 .footer_text {

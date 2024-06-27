@@ -6,6 +6,9 @@
     max-width: 650px;
     padding-top: 100px;
 
+    @media (max-width: 640px) {
+        width: 95vw;
+    }
 
 }
 

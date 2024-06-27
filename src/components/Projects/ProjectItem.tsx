@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 
 import "../../styles/Projects/ProjectItem.css";
+import { useState } from "react";
 
 type ProjectItemProps = {
   title: string;
@@ -19,10 +21,22 @@ export default function ProjectItem({
   github,
   demo,
 }: ProjectItemProps) {
+  const [imgSrc, setImgSrc] = useState(image);
+
+  const handleError = () => {
+    setImgSrc("/images/not-found.webp");
+  };
+
   return (
     <div className="project_item">
       <div className="project_image">
-        {/* <Image src={image} alt={title} /> */}
+        <Image
+          src={imgSrc}
+          alt={title}
+          width={650}
+          height={400}
+          onError={handleError}
+        />
       </div>
       <div className="project_content">
         <h2 className="project_title">{title}</h2>

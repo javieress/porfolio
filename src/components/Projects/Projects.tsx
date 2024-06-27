@@ -17,20 +17,20 @@ type ProjectItem = {
 export default function Projects({ id }: Project) {
   const projects: ProjectItem[] = [
     {
-      title: "Proyecto 1",
-      technologies: ["React", "Node.js", "MongoDB"],
+      title: "Expenses Tracker",
+      technologies: ["Vue", "JavaScript"],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget urna et nulla consectetur.",
-      image: "https://via.placeholder.com/150",
-      github: "https://github.com",
-      demo: "https://demo.com",
+        "App para llevar un control de tus gastos. Puedes agregar, eliminar y editar gastos.",
+      image: "/images/expense-tracker.webp",
+      github: "https://github.com/javieress/vue-expense-tracker",
+      demo: "https://vue-expense-tracker-6zf.pages.dev",
     },
     {
       title: "Proyecto 2",
       technologies: ["React", "Node.js", "MongoDB"],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget urna et nulla consectetur.",
-      image: "https://via.placeholder.com/150",
+      image: "/images/project-2.png",
       github: "https://github.com",
       demo: "https://demo.com",
     },
